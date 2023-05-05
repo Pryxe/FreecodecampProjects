@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head> 
+    <title> FreeCodeCamp Survey Form Prototype</title>
+    <link rel="stylesheet" href="styless.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+      <h1 id="title">FreeCodeCamp Survey Form Prototype</h1>
+      <p id="description"> Create an account is most useful than you think. </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>  
+          <input class="form-control" type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email" >Email</label>  
+          <input class="form-control" type="email" id="email" name="Email" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="age">Age <span class="clue">(Opcional)</span></label>  
+          <input class="form-control" type="number" id="number" name="age" placeholder="Age" min="16" max="88">
+        </div>
+        <div class="form-group">
+          <p>Choose which  fits you better</p>
+          <select id="dropdown" name="role"  class="form-control" required>
+            <option disabled selected value>Select Current Role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full time learner</option>
+            <option value="preferno">Prefer not to say</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend this place to a friend?</p>
+          <label><input name="user-recommed" value="definitely" type="radio" class="input-radio" checked>Definitely</label>
+          <label><input name="user-recommed" value="maybe" type="radio" class="input-radio">Maybe</label>
+          <label><input name="user-recommed" value="notsure" type="radio" class="input-radio">Not sure</label>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite color?</p>
+          <select id="colormostlike" name="colormostlike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="yellow">Yellow</option>
+              <option value="purple">Purple</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <p>What are your favorites musical genders?</p>
+            <label>
+                <input type="checkbox" name="prefer" value="rock" class="input-checkbox">
+                Rock
+            </label>
+            <label>
+                <input type="checkbox" name="prefer" value="pop" class="input-checkbox">
+                Pop
+            </label>
+            <label>
+              <input type="checkbox" name="prefer" value="rap" class="input-checkbox">
+              Rap
+            </label>
+            <label>
+              <input type="checkbox" name="prefer" value="indie" class="input-checkbox">
+            Indie
+            </label>
+            <label>
+              <input type="checkbox" name="prefer" value="electro" class="input-checkbox">
+              Electro
+            </label>
+            <label>
+              <input type="checkbox" name="prefer" value="rancheras" class="input-checkbox">
+              Rancheras
+            </label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>         
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
